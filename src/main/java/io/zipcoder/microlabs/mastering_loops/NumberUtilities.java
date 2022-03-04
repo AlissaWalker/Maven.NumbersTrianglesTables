@@ -29,24 +29,28 @@ public class NumberUtilities {
 
 
     public static String getSquareNumbers(int start, int stop, int step) {
-
+        String result = "";
 
         return null;
     }
 
-    public static String getRange(int start) {
-        return null;
+    public static String getRange(int stop) {
+        return NumberUtilities.getRange(0,stop );
     }
 
     public static String getRange(int start, int stop) {
-        return null;
+        return NumberUtilities.getRange(start, stop,1);
 
     }
 
 
     public static String getRange(int start, int stop, int step) {
-       // if ( start <= )
-        return null;
+// range = start - stop // step hasnt been defined
+        String result = "";
+        for (  int i = start ;  i  < stop ; i = i + step ){
+             result =  result + i ;
+        }
+      return result;
     }
 
 
