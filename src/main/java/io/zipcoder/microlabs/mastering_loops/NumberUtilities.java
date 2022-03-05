@@ -29,9 +29,10 @@ public class NumberUtilities {
 
 
     public static String getSquareNumbers(int start, int stop, int step) {
-        String result = "";
 
-        return null;
+
+
+       return NumberUtilities.getExponentiations( start, stop, step ,2);
     }
 
     public static String getRange(int stop) {
@@ -55,7 +56,11 @@ public class NumberUtilities {
 
 
     public static String getExponentiations(int start, int stop, int step, int exponent) {
-        return null;
+        String result= "";
+        for(int i= start; i < stop; i= i+ step ){
+            result = result+ Math.round((Math.pow(i,exponent)));
+        }
+        return result;
 
     }
 }
